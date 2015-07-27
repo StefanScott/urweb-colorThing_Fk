@@ -54,4 +54,4 @@ Id = string
 
 However, both instances of `Id` defined in the program (the primary keys of tables `thing` and `color`) have type `int`, not `string`.
 
-Thanks for any help explaining these errors!
+Thanks for any help explaining this error!
