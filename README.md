@@ -19,7 +19,7 @@ table thing : {
   Color : int
 }
 PRIMARY KEY Id,
-CONSTRAINT Tabl_isof_Color FOREIGN KEY Color REFERENCES color(Id)
+CONSTRAINT Thing_isof_Color FOREIGN KEY Color REFERENCES color(Id)
 ```
 
 It also makes the following additional simplifications:

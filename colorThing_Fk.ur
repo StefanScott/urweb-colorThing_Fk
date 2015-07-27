@@ -13,7 +13,7 @@ table thing : {
 }
   PRIMARY KEY Id,
   CONSTRAINT Id CHECK Id >= 0,
-  CONSTRAINT Tabl_isof_Color FOREIGN KEY Color REFERENCES color(Id)
+  CONSTRAINT Thing_isof_Color FOREIGN KEY Color REFERENCES color(Id)
 
 
 fun list () =
