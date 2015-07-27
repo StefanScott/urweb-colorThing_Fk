@@ -1,6 +1,6 @@
 ﻿# urweb-colorThing_Fk
 
-In order to minimize possible errors, I am trying to do minimal example of a `<select>` widget to edit a foreign-key field, but I am still getting a compile error "Some constructor unification variables are undetermined". 
+In order to minimize possible errors, I am trying to do a minimal example of a `<select>` widget to edit a foreign-key field, but I am still getting a compile error "Some constructor unification variables are undetermined". 
 
 Strangely, this error message mentions a field `[Id = string]` - but my code only uses `[Id = int]`.
 
