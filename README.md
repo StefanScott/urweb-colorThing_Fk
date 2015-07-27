@@ -5,6 +5,7 @@ This is a minimal example attempting to provide a <select> widget to allow the u
 In order to minimize possible errors, this code:
 
 - uses only two tables ("parent" table 'color', and "child" table 'thing')
+
 ```
     table color : { 
       Id : int, 
@@ -20,6 +21,7 @@ In order to minimize possible errors, this code:
     PRIMARY KEY Id,
     CONSTRAINT Tabl_isof_Color FOREIGN KEY Color REFERENCES color(Id)
 ```
+
 - does not use a sequence or auto-increment (ie, the user has to select the primary key)
 
 - does not use any meta-programming
@@ -31,9 +33,11 @@ In order to minimize possible errors, this code:
 - provides no web interface for creating, updating or deleting 'color' records (must add via psql)
 
 The Ur/Web compile gives the following error:
+
 ```
 Some constructor unification variables are undetermined in declaration
 (look for them as "<UNIF:...>")
+
 ```
 It is hard to debug this error, as it refers to a wide range of lines (the entire 
 
