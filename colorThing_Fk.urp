@@ -1,0 +1,4 @@
+database dbname=color_thing_fk
+sql color_thing_fk.sql
+
+colorThing_Fk
