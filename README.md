@@ -7,19 +7,19 @@ In order to minimize possible errors, this code:
 - uses only two tables ("parent" table 'color', and "child" table 'thing')
 
 ```
-    table color : { 
-      Id : int, 
-      Nam : string 
-    }
-    PRIMARY KEY Id,
+table color : { 
+  Id : int, 
+  Nam : string 
+}
+PRIMARY KEY Id,
  
-    table thing : {
-      Id : int, 
-      Nam : string,
-      Color : int
-    }
-    PRIMARY KEY Id,
-    CONSTRAINT Tabl_isof_Color FOREIGN KEY Color REFERENCES color(Id)
+table thing : {
+  Id : int, 
+  Nam : string,
+  Color : int
+}
+PRIMARY KEY Id,
+CONSTRAINT Tabl_isof_Color FOREIGN KEY Color REFERENCES color(Id)
 ```
 
 - does not use a sequence or auto-increment (ie, the user has to select the primary key)
