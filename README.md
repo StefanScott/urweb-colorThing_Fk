@@ -1,6 +1,6 @@
 ﻿# urweb-colorThing_Fk
 
-This is a minimal example attempting to provide a <select> widget to allow the user to easily edit a foreign-key field.
+This is a minimal example attempting to provide a `<select>` widget to allow the user to easily edit a foreign-key field.
 
 In order to minimize possible errors, this code uses only two tables ("parent" table 'color', and "child" table 'thing'):
 
@@ -50,10 +50,3 @@ Id = string
 However, the two instances of Id defined in the program (the primary keys of tables 'thing' and 'color') have type 'int', not 'string'.
 
 Thanks for any help explaining these errors!
-
-
-
-
-
-
-
