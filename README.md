@@ -9,7 +9,7 @@ table color : {
   Id : int, 
   Nam : string 
 }
-PRIMARY KEY Id,
+PRIMARY KEY Id
  
 table thing : {
   Id : int, 
