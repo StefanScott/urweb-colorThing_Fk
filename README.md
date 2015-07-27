@@ -20,7 +20,7 @@ PRIMARY KEY Id,
 CONSTRAINT Tabl_isof_Color FOREIGN KEY Color REFERENCES color(Id)
 ```
 
-It also makes the following further simplifications:
+It also makes the following additional simplifications:
 
 - no sequence or auto-increment (ie, the user has to select the primary key)
 
@@ -38,8 +38,11 @@ The Ur/Web compiler gives the following error:
 Some constructor unification variables are undetermined in declaration
 (look for them as "<UNIF:...>")
 ```
+The complete error message from the compiler is reproduced in [Issue 1](https://github.com/StefanScott/urweb-colorThing_Fk/issues/1).
 
-It is hard to debug this error, as it refers to a wide range of lines (covering all the function definitions).
+It can be difficult to debug this error, as it refers to a wide range of lines (covering all the function definitions).
+
+Clue:
 
 There is one interesting clue in the compiler error message: it frequently mentions a field:
 
@@ -47,6 +50,6 @@ There is one interesting clue in the compiler error message: it frequently menti
 Id = string
 ```
 
-However, the two instances of Id defined in the program (the primary keys of tables 'thing' and 'color') have type 'int', not 'string'.
+However, both instances of Id defined in the program (the primary keys of tables 'thing' and 'color') have type 'int', not 'string'.
 
 Thanks for any help explaining these errors!
